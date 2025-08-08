@@ -4,9 +4,9 @@
 
 -- Basic settings
 vim.opt.number = true          -- Line numbers
-vim.opt.relativenumber = false -- No relative line numbers
+vim.opt.relativenumber = true  -- relative line numbers
 vim.opt.cursorline = true      -- Highlight current line
-vim.opt.wrap = false           -- Don't wrap lines
+vim.opt.wrap = true            -- Don't wrap lines
 vim.opt.scrolloff = 10         -- Keep 10 lines above/below cursor
 vim.opt.sidescrolloff = 8      -- Keep 8 columns left/right of cursor
 
@@ -55,10 +55,10 @@ vim.opt.autowrite = false   -- Don't auto save
 
 -- Display hidden character
 vim.opt.list = true
-vim.opt.listchars:append("space:⋅") -- Space as a dot
+-- vim.opt.listchars:append("space:⋅") -- Space as a dot
 vim.opt.listchars:append("lead:⋅") -- Same for leading space
 vim.opt.listchars:append("trail:⋅") -- Same for trailing space
-vim.opt.listchars:append("eol:") -- End-of-line as a return arrow
+-- vim.opt.listchars:append("eol:↵") -- End-of-line as a return arrow
 vim.opt.listchars:append("tab:» ") -- Tab as double chevron
 vim.opt.fillchars:append("diff: ") -- Diff as whitespace
 vim.opt.fillchars:append("eob: ") -- End-of-buffer as whitespace
